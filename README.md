@@ -17,6 +17,7 @@
 ```docker run --rm -it -p 8501:8501 -v /home/user/Documents/Deploy/model:/models -e MODEL_NAME=resnet50 tensorflow/serving```
 
 ## Steps to deploy your Model on Heroku - Free Tier
+0. Install heroku by ```sudo snap install heroku --classic```
 1. heroku login 
 2. heroku create resnetapps
   ```
