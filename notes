@@ -1,0 +1,15 @@
+heroku create resnetapps
+	Creating ⬢ resnetapps... done
+	https://resnetapps.herokuapp.com/ | https://git.heroku.com/resnetapps.git
+	Creating ⬢ resnetapps... done
+	https://resnetapps.herokuapp.com/ | https://git.heroku.com/resnetapps.git
+
+
+heroku container:login
+
+heroku container:push web -a resnetapps
+
+heroku container:release web -a resnetapps
+
+heroku logs -a resnetapps --tail
+
